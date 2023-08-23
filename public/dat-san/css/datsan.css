@@ -1,0 +1,442 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .3px;
+}
+header
+{
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    background: black;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.logo img
+{
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+nav
+{
+    margin-left: 50px;
+}
+.side
+{
+    float: right;
+    margin-top: -82px;
+    background: #fe5900;
+    padding: 17px 25px 17px 25px;
+}
+.clearfix
+{
+    clear: both;
+}
+nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li
+{
+    list-style: none;
+}
+nav ul li a
+{
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover,
+nav ul li a.active
+{
+    background: #069370;
+    color: #fff;
+    transition: .5s;
+}
+nav ul li a.active1
+{
+    background: #069370;
+    color: #fff;
+    transition: .5s;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1500;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.side-text
+{
+    margin-left: 120px;
+}
+.side-text h3
+{
+    font-weight: 900;
+}
+.side-text p
+{
+    font-weight: 300;
+}
+.side-text h5
+{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.drop-btn 
+        {
+            position: absolute;
+            right: 8%;
+            top: 20px;
+            z-index: 3000;
+        }
+        .drop-btn .drops-btn
+        {
+            width: 120px;
+            background: #242526;
+            color: white;
+            line-height: 40px;
+            padding: 0 20px;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .drop-btn .drops-btn span
+        {
+            float: right;
+            line-height: 40px;
+            font-size: 28px;
+            cursor: pointer;
+        }
+        .drop-btn .wrapper
+        {
+            position: absolute;
+            display: flex;
+            width: 190px;
+            overflow: hidden;
+            top: 60px;
+            background: #242526;
+            border-radius: 5px;
+            display: none;
+        }
+        .drop-btn .wrapper.show
+        {
+            display: block;
+            display: flex;
+        }
+        .drop-btn .wrapper ul 
+        {
+            list-style: none;
+            width: 300px;
+            padding: 10px;
+        }
+        .drop-btn .wrapper ul  li
+        {
+            line-height: 55px;
+        }
+        .drop-btn .wrapper ul li a
+        {
+            position: relative;
+            text-decoration: none;
+            color: #b0b3b8;
+            display: flex;
+            font-weight: 500;
+            padding: 0 10px;
+            align-items: center;
+            border-radius: 8px;
+        }
+        .drop-btn .wrapper ul li:hover a
+        {
+            background: #3A3B3C;
+        }
+        .drop-btn .wrapper ul li a .icon
+        {
+            height: 40px;
+            width: 40px;
+            margin-right: 13px;
+            background: #ffffff1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 50%;
+        }
+        .drop-btn .wrapper ul li a i
+        {
+            position: absolute;
+            right: 10px;
+            font-size: 25px;
+            pointer-events: none;
+        }
+        footer
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+footer .container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container .sec
+{
+    margin-right: 30px;
+}
+footer .container .sec.aboutus
+{
+    width: 40%;
+}
+footer .container  h2
+{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container h2:before
+{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer  p
+{
+    color: #999;
+}
+footer .sci
+{
+    margin-top: 20px;
+    display: flex;
+}
+footer .sci li
+{
+    list-style: none;
+}
+footer .sci li a
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+footer .sci li a:hover
+{
+    background: red;
+}
+footer .sci li a .fab
+{
+    color: #fff;
+    font-size: 20px;
+}
+.quickLinks
+{
+    position: relative;
+    width: 25%;
+}
+.quickLinks ul li
+{
+    list-style: none;
+}
+.quickLinks ul li a
+{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quickLinks ul li a:hover
+{
+    color: #fff;
+}
+.contact
+{
+    width: calc(35% - 60px);
+    margin-right: 0 !important
+}
+.contact .info
+{
+    position: relative;
+}
+.contact .info li
+{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1)
+{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span
+{
+    color: #999;
+}
+.contact .info li span a
+{
+    color: #999;
+}
+.contact .info li a
+{
+    color: #999;
+    text-decoration: none;
+}
+.contact .info li a:hover
+{
+    color: #fff;
+}
+.copyrightText
+{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+.subtitle {
+    margin-bottom: 0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #868e96;
+    font-weight: bold;
+}
+.text-primary {
+    color: #fb8c00 !important;
+}
+.text-block:first-of-type {
+    padding-top: 0;
+}
+.text-block {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+.text-sm {
+    font-size: .875rem;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #fc9600;
+    border-color: #fc9600;
+}
+.btn-primary:hover {
+	background-color: #fc9600;
+    border-color: #fc9600;
+}
+.form-block:last-of-type {
+    border-bottom: none;
+}
+
+.form-block {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #e9ecef;
+}
+.sticky-nav-right-100 {
+    top: 100px;
+}
+.text-muted {
+    color: #868e96 !important;
+}
+.orange-text {
+    color: orange !important;
+}
+.text-block:last-of-type {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+.text-line-through {
+    text-decoration: line-through;
+}
+.opacity-8 {
+    opacity: .8;
+}
+.bg-gray-800 {
+    background: #343a40 !important;
+}
+.text-gray-300 {
+    color: #dee2e6;
+}
+.bg-gray-200 {
+    background: #e9ecef !important;
+}
+.btn-link:hover {
+	text-decoration: none;
+}
+.btn:focus {
+	box-shadow: none; ;
+	text-decoration: none;
+}
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+.btn-outline-muted {
+    color: #868e96;
+    border-color: #868e96;
+}
+a:hover {
+	text-decoration: none;
+}
+.bg{
+    background-image: url('https://sports-club.cmsmasters.net/wp-content/uploads/2015/04/footer_lodyas1.png');
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: auto;
+}
